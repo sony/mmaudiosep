@@ -56,7 +56,7 @@ class MelConverter(nn.Module):
 
     def forward(self, waveform: torch.Tensor, center: bool = False) -> torch.Tensor:
         waveform = waveform.clamp(min=-1., max=1.).to(self.device)
-
+        dtype=waveform.dtype
         waveform = torch.nn.functional.pad(
             waveform.unsqueeze(1),
             [int((self.n_fft - self.hop_size) / 2),
@@ -64,7 +64,7 @@ class MelConverter(nn.Module):
             mode='reflect')
         waveform = waveform.squeeze(1)
 
-        spec = torch.stft(waveform,
+        spec = torch.stft(waveform.to(torch.float32),
                           self.n_fft,
                           hop_length=self.hop_size,
                           win_length=self.win_size,
@@ -77,10 +77,10 @@ class MelConverter(nn.Module):
 
         spec = torch.view_as_real(spec)
         spec = torch.sqrt(spec.pow(2).sum(-1) + (1e-9))
-        spec = torch.matmul(self.mel_basis, spec)
+        spec = torch.matmul(self.mel_basis.to(torch.float32), spec.to(torch.float32))
         spec = spectral_normalize_torch(spec, self.norm_fn)
 
-        return spec
+        return spec.to(dtype)
 
 
 def get_mel_converter(mode: Literal['16k', '44k']) -> MelConverter:
