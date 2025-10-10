@@ -1,0 +1,19 @@
+defaults:
+  - base_config
+  - override hydra/job_logging: custom-simplest
+  - _self_
+
+hydra:
+  run:
+    dir: ./output/${exp_id}
+  output_subdir: eval-${now:%Y-%m-%d_%H-%M-%S}-hydra
+
+enable_grad_scaler: False
+
+exp_id: ${model}
+dataset: vggclean
+duration_s: 10.0
+
+# for inference, this is the per-GPU batch size
+batch_size: 16
+output_name: null

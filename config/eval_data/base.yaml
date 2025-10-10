@@ -1,0 +1,23 @@
+# For Generation Test
+VGGSound:
+  video_path: ../data/test-videos
+  # from the officially released csv file
+  csv_path: ../data/vggsound.csv
+
+# For Separation Test
+# original mixture audio from
+# https://drive.google.com/drive/folders/1PbCsuvdrzwAZZ_fwIzF0PeVGZkTk0-kL
+# music_eval.zip
+MUSIC_test:
+  video_path: ../data/music/mixture/video
+  tsv_path: ../data/music/eval_music.tsv
+  audio_path: ../data/music/mixture/audio
+
+# For Separation Test
+# original mixture audio from
+# https://drive.google.com/drive/folders/1PbCsuvdrzwAZZ_fwIzF0PeVGZkTk0-kL
+# vggsound_eval.zip 
+VGGSoundClean_test:
+  video_path: ../data/vggsound_clean/mixture/video
+  tsv_path: ../data/vggsound_clean/eval_vggsound_clean.tsv
+  audio_path: ../data/vggsound_clean/mixture/audio
