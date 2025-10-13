@@ -5,6 +5,7 @@
 > **MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation**<br>
 > [Akira Takahashi](https://scholar.google.co.jp/citations?user=oKUpOaQAAAAJ), [Shusuke Takahashi](https://scholar.google.co.jp/citations?user=_mhxayYAAAAJ), [Yuki Mitsufuji](https://www.yukimitsufuji.com/)<br>
 > Sony Group Corporation<br>
+> [arXiv](https://arxiv.org/abs/2510.09065)<br>
 
 ## Installation
 
@@ -93,6 +94,19 @@ See [EVAL.md](docs/EVAL.md).
 ## Training Datasets
 
 MMAudioSep was trained on several datasets, including [AudioSet](https://research.google.com/audioset/), [Freesound](https://github.com/LAION-AI/audio-dataset/blob/main/laion-audio-630k/README.md), [VGGSound](https://www.robots.ox.ac.uk/~vgg/data/vggsound/), [AudioCaps](https://audiocaps.github.io/), and [WavCaps](https://github.com/XinhaoMei/WavCaps). These datasets are subject to specific licenses, which can be accessed on their respective websites. We do not guarantee that the pre-trained models are suitable for commercial use. Please use them at your own risk.
+
+## Citation
+If you find this work useful for your research, please cite our paper as follows:
+
+```bibtex
+@article{takahashi2025mmaudiosep,
+  title={MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation},
+  author={Akira, Takahashi and Shusuke, Takahashi and Mitsufuji, Yuki},
+  journal={arXiv preprint arXiv:2510.09065},
+  url={https://arxiv.org/abs/2510.09065},
+  year={2025}
+}
+```
 
 ## Relevant Repositories
 
