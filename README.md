@@ -5,6 +5,7 @@
 > **MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation**<br>
 > [Akira Takahashi](https://scholar.google.co.jp/citations?user=oKUpOaQAAAAJ), [Shusuke Takahashi](https://scholar.google.co.jp/citations?user=_mhxayYAAAAJ), [Yuki Mitsufuji](https://www.yukimitsufuji.com/)<br>
 > Sony Group Corporation<br>
+> In ICASSP 2026. <br>
 > [arXiv](https://arxiv.org/abs/2510.09065)<br>
 
 ## Installation
@@ -99,12 +100,11 @@ MMAudioSep was trained on several datasets, including [AudioSet](https://researc
 If you find this work useful for your research, please cite our paper as follows:
 
 ```bibtex
-@article{takahashi2025mmaudiosep,
-  title={MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation},
-  author={Akira, Takahashi and Shusuke, Takahashi and Mitsufuji, Yuki},
-  journal={arXiv preprint arXiv:2510.09065},
-  url={https://arxiv.org/abs/2510.09065},
-  year={2025}
+@inproceedings{takahashi2025mmaudiosep,
+  title={{MMAudioSep}: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation},
+  author={Takahashi, Akira and Takahashi, Shusuke  and Mitsufuji, Yuki},
+  booktitle={ICASSP},
+  year={2026}
 }
 ```
 
