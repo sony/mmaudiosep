@@ -7,6 +7,7 @@
 > Sony Group Corporation<br>
 > In ICASSP 2026. <br>
 > [arXiv](https://arxiv.org/abs/2510.09065)<br>
+> [Demo](https://pontakahashi.github.io/MMAudioSep_Demo/)<br>
 
 ## Installation
 
@@ -102,7 +103,7 @@ If you find this work useful for your research, please cite our paper as follows
 ```bibtex
 @inproceedings{takahashi2025mmaudiosep,
   title={{MMAudioSep}: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation},
-  author={Takahashi, Akira and Takahashi, Shusuke  and Mitsufuji, Yuki},
+  author={Takahashi, Akira and Takahashi, Shusuke and Mitsufuji, Yuki},
   booktitle={ICASSP},
   year={2026}
 }
